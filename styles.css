@@ -1,0 +1,204 @@
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins, sans-serif;
+  }
+  p {
+    line-height: 1.5;
+  }
+  img {
+    max-width: 100%;
+  }
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .container {
+    background: hsl(193, 100%, 96%) url('./images/bg-hero-mobile.svg') no-repeat;
+    background-size: cover;
+    padding: 2rem;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  article {
+    margin: 4rem 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 4rem 2rem;
+  }
+  ul > .tile {
+    margin-bottom: 4rem;
+  }
+  .tile {
+    background-color: white;
+    box-shadow: 0 0 30px -20px hsl(208, 11%, 55%);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  .tile img {
+    margin: 2rem 0;
+  }
+  .tile p {
+    color: hsl(208, 11%, 55%);
+  }
+  aside {
+    background-image: linear-gradient(180deg, white 0%, white 50%, hsl(192, 100%, 9%) 51%, hsl(192, 100%, 9%) 100%);
+    padding: 4rem 0;
+  }
+  aside .tile {
+    margin: 0 2rem;
+  }
+  .button {
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    box-shadow: 0 10px 10px -5px hsla(209, 11%, 55%, 0.509);
+  }
+  .button.secondary {
+    background-color: white;
+    color:hsl(192, 100%, 9%);
+  }
+  .button.primary {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    display: block;
+    margin: 2rem 0;
+  }
+  footer {
+    text-align: left;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 2rem;
+  }
+  footer > img {
+    color: white;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  dl > div {
+    margin-bottom: 2rem;
+  }
+  footer dl dt,
+  footer dl dd {
+    display: table-cell;
+  }
+  dt {
+    width: 40px;
+  }
+  .sitemap {
+    margin: 2rem 0;
+    list-style-type: none;
+  }
+  .sitemap li {
+    margin: 1rem 0;
+  }
+  .social-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .social-icons a {
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .social-icons a:active,
+  .social-icons a:focus,
+  .social-icons a:hover {
+    color: hsl(192, 100%, 9%);
+    background-color: white;
+  }
+  .attribution { text-align: center; }
+  .attribution a { color: hsl(322, 100%, 66%); }
+
+  @media only screen and (min-width: 960px) {
+    body {
+      text-align: left;
+    }
+    .container {
+      background-image: url('./images/bg-hero-desktop.svg');
+    }
+    article {
+      display: flex;
+    }
+    article > div {
+      flex: 2;
+      margin-right: 10vw;
+    }
+    article > p {
+      flex: 3;
+    }
+    article .button.primary {
+      display: inline-block;
+    }
+    .tiles {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tiles .tile {
+      display: flex;
+      align-items: center;
+    }
+    .tiles .tile > * {
+      flex: 1;
+      padding: 0 2rem;
+    }
+    .tiles .tile:nth-of-type(2n) {
+      flex-direction: row-reverse;
+    }
+    aside .tile {
+      max-width: 40vw;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    aside .tile .button {
+      display: inline-block;
+      margin: auto;
+    }
+    footer .logo {
+      margin-bottom: 2rem;
+    }
+    .flex-wrapper {
+      display: flex;
+    }
+    .flex-wrapper > * {
+      flex: 1;
+    }
+    .flex-wrapper dl {
+      margin-top: 0;
+    }
+    .sitemap {
+      margin: 0 2rem;
+      columns: 2;
+    }
+    .sitemap li {
+      margin: 0 0 1rem 0;
+    }
+    .social-icons {
+      justify-content: flex-start;
+    }
+    .flex-wrapper .attribution {
+      text-align: left;
+    }
+  }
